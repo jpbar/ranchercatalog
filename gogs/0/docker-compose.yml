@@ -1,0 +1,9 @@
+version: '2'
+services:
+  gogs:
+    image: gogs/gogs:latest
+    volumes:
+    - /disk2/docker_volumes/gogs/data:/data
+    ports:
+    - 10080:3000/tcp
+    - 10022:22/tcp

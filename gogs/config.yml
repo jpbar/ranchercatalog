@@ -1,0 +1,6 @@
+name: Gogs
+description: |
+    A painless self-hosted Git service
+	private catalog
+version: v0.9.113.1223
+category: Git
