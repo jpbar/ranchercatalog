@@ -1,9 +1,14 @@
-version: '2'
-services:
-  gogs:
+gogs:
     image: gogs/gogs:latest
-    volumes:
-    - /disk2/docker_volumes/gogs/data:/data
     ports:
-    - 10080:3000/tcp
-    - 10022:22/tcp
+        - ${http_port}:3000
+        - ${ssh_port}:22
+    links:
+        - mysql:db
+
+mysql:
+    image: mysql:latest
+    ports:
+        - ${public_port}:3306
+    environment:
+        MYSQL_ROOT_PASSWORD: ${mysql_password}

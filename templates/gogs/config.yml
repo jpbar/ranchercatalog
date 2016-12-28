@@ -1,6 +1,5 @@
-name: Gogs_ALE
+name: Gogs
 description: |
     A painless self-hosted Git service
-	private catalog
-version: v0.9.113.1223
+version: v0.8.43
 category: Git
