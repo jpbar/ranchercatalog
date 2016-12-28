@@ -1,4 +1,8 @@
 version: '2'
+catalog:
+  name: Gogs_ALE
+  version: v0.9.113.1223
+  description: Gogs_ALE v0.9.113.1223  
 services:
   gogs:
     scale: 1
