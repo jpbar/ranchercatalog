@@ -2,6 +2,7 @@ version: '2'
 services:
   gogs:
     image: gogs/gogs:latest
+    network_mode: "bridge"
     volumes:
     - /disk2/docker_volumes/gogs/data:/data
     ports:
